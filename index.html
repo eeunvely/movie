@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
+
+      * {
+        font-family: "Gowun Dodum", sans-serif;
+      }
+      .title {
+        color: white;
+        height: 250px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("https://images.unsplash.com/photo-1543158266-0066955047b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+        background-position: center;
+        background-size: cover;
+      }
+      .title > button {
+        width: 250px;
+        height: 50px;
+
+        background-color: transparent;
+
+        border: 1px solid white;
+        border-radius: 50px;
+        color: white;
+
+        margin-top: 20px;
+      }
+      .title > button:hover {
+        border: 3px solid white;
+      }
+      .quote {
+        color: grey;
+      }
+      .cards {
+        width: 2200px;
+        margin: 40px auto 0 auto;
+      }
+      .post{
+        width : 500px;
+        margin : 20px auto 20px auto;
+        padding : 20px 20px 5px 20px;
+        box-shadow: 0px 0px 3px 0px gray;
+      }
+      .btn{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 5px;
+      }
+      .btn > button{
+        margin-right: 10px;
+      }
+    </style>
+
+    <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
+  </head>
+  <body>
+    <div class="title">
+      <h1>내가 애정하는 영화들</h1>
+      <button>영화 기록하기</button>
+    </div>
+
+    <div class="post">
+      <div class="form-floating mb-3">
+        <input
+          type="email"
+          class="form-control"
+          id="floatingInput"
+          placeholder="name@example.com"
+        />
+        <label for="floatingInput">Email address</label>
+        <div class="form-floating">
+          <textarea
+            class="form-control"
+            placeholder="Leave a comment here"
+            id="floatingTextarea"
+          ></textarea>
+          <label for="floatingTextarea">Comments</label>
+        </div>
+        <div class="btn">
+          <button type="button" class="btn btn-dark">기록하기</button>
+          <button type="button" class="btn btn-outline-dark">닫기</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="http://img.movist.com/?img=/x00/00/88/75_p1.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">The Notebook</h5>
+              <p class="card-text">
+                17살, ‘노아’는 밝고 순수한 ‘앨리’를 보고 첫눈에 반한다. 빠른
+                속도로 서로에게 빠져드는 둘. 그러나 이들 앞에 놓인 장벽에 막혀
+                이별하게 된다.<br />
+                24살, ‘앨리’는 우연히 신문에서 ‘노아’의 소식을 접하고 잊을 수
+                없는 첫사랑 앞에서 다시 한 번 선택의 기로에 서게 되는데… <br />
+                열일곱의 설렘, 스물넷의 아픈 기억, 그리고 마지막까지… 한 사람을
+                지극히 사랑했으니 내 인생은 성공한 인생입니다.
+              </p>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p class="quote">"If you're a bird, I'm a bird."</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://movie-phinf.pstatic.net/20201229_146/1609226288425JgdsP_JPEG/movie_image.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">La La Land</h5>
+              <p class="card-text">
+                황홀한 사랑, 순수한 희망, 격렬한 열정… 이 곳에서 모든 감정이
+                폭발한다! 꿈을 꾸는 사람들을 위한 별들의 도시 ‘라라랜드’. 재즈
+                피아니스트 ‘세바스찬’(라이언 고슬링)과 배우 지망생 ‘미아’(엠마
+                스톤), 인생에서 가장 빛나는 순간 만난 두 사람은 미완성인 서로의
+                무대를 만들어가기 시작한다.
+              </p>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p class="quote">
+                “City of stars. Are you shining just for me? City of stars.
+                There's so much that I can't see.”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://movie-phinf.pstatic.net/20171121_75/1511230561589Rvq85_JPEG/movie_image.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">If Only</h5>
+              <p class="card-text">
+                오늘, 비로소 사랑을 알았어 눈앞에서 사랑하는 연인을 잃은 남자는
+                다음 날 아침, 자신의 옆에서 자고 있는 연인을 보고 소스라치게
+                놀란다. 기쁨도 잠시, 정해진 운명은 바꿀 수 없단 것을 깨달은 그는
+                더 늦기 전에 자신의 진정한 사랑을 전하기로 마음먹는데… 네가
+                아니었다면 난 영영 사랑을 몰랐을 거야 사랑하는 법을 알게 해줘서
+                고마워, 사랑받는 법도.
+              </p>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p class="quote">
+                "Samantha if not for today, if not for you I would never have
+                known love at all... So thank you for being the person who
+                taught me to love... and to be love."
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://movie-phinf.pstatic.net/20170421_168/1492761621282U7CYn_JPEG/movie_image.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">The Devil Wears Prada</h5>
+              <p class="card-text">
+                화려한 뉴욕을 꿈꾸는 자, 그 무게를 견뎌라! 최고의 패션 매거진
+                ‘런웨이’에 기적 같이 입사했지만 ‘앤드리아’(앤 해서웨이)에겐 이
+                화려한 세계가 그저 낯설기만 하다. 원래의 꿈인 저널리스트가 되기
+                위해 딱 1년만 버티기로 결심하지만 악마 같은 보스, ‘런웨이’
+                편집장 ‘미란다’(메릴 스트립)와 일하는 것은 정말 지옥 같은데…!!
+                24시간 울려대는 휴대폰, 자친구 생일도 챙기지 못할 정도의 풀
+                야근, 심지어 그녀의 쌍둥이 방학 숙제까지! 꿈과는 점점 멀어지고..
+                잡일 전문 쭈구리 비서가 된 '앤드리아' 오늘도 ‘미란다’의 칼 같은
+                질타와 불가능해 보이는 미션에 고군분투하는 ‘앤드리아’ 과연, 전쟁
+                같은 이곳에서 버틸 수 있을까?
+              </p>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p class="quote">
+                “Oh, don't be ridiculous. Andrea. Everybody wants this.
+                Everybody wants to be us.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
